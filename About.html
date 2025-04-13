@@ -17,6 +17,8 @@
 
 <body>
     <header>
+        <!-- HEADER SECTION -->
+        <!-- HEADER LOGO -->
         <div class="header-container">
             <div class="logo">
                 <img class="website-logo" src="./images/ayush logo2.jpg" alt="website-logo">
@@ -34,17 +36,25 @@
             </nav>
             <!-- HEADER BUTTONS -->
             <div class="buttons">
-                <button class="search-button"> <i class="fa-solid fa-magnifying-glass"></i>Search</button>
-                <!-- <button class="filter" onclick="toggledrop/"><i class="fa-solid fa-bars"></i>Filter</button> -->
+                <input type="text" placeholder="Search for a herb" class="search-button">
+    
 
                 <!-- Filter Button -->
-                <button class="filter" onclick="toggleDropdown()">
-                    <i class="fa-solid fa-bars"></i>Filter
-                </button>
+                 <div class="dropdown">
+                    <button class="dropdown-button"><i class="fa-solid fa-bars"></i>Filter</button>
+                    <div class="dropdown-content">
+                        <a href="#">All Types</a>
+                        <a href="#">Medicinal</a>
+                        <a href="#">Culinary</a>
+                        <a href="#">Aromatic</a>
+                        <a href="#">Culinary</a>
+                      </div>
+                 </div>
+              
 
             </div>
         </div>
-
+    </header>
 
         <div class="header">
             About us

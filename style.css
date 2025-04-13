@@ -69,21 +69,57 @@ body {
 }
 
 .search-button,
-.filter {
-    padding: 8px 15px;
+.dropdown-button {
+    padding: 15px 15px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     display: flex;
     align-items: center;
+    margin-right: 10px;
 }
 
-.filter {
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-button {
     background-color: rgb(19, 139, 19, 0.7);
     color: white;
     gap: 8px;
+    border-radius: 8px;
 }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-button {
+    background-color:rgba(19, 139, 19, 0.9);
+  }
 
 .search-button {
     gap: 10px;
@@ -101,9 +137,9 @@ body {
     background-color: #f9f9f9;
 }
 
-.filter:hover {
+/* .dropdown-button:hover {
     background-color: rgba(19, 139, 19, 0.9);
-}
+} */
 
 
 /* EXTRA MEHNAT */
